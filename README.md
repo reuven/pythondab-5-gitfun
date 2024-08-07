@@ -1,3 +1,6 @@
 # Some Docs (or so you think)
+# Another Title
 
-This is documentation!
+## A heading
+
+some text
