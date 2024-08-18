@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-"""
-Usage: menu.py foo bar baz
-"""
 import sys
 
 def menu(args):
@@ -22,5 +19,10 @@ def menu(args):
 
 
 if __name__ == '__main__':
-    user_choice = menu(sys.argv[1:])
-    print(f"The user chose {user_choice}.")
+    choices = sys.argv[1:]
+    if choices:
+        user_choice = menu(sys.argv[1:])
+        print(f"The user chose {user_choice}.")
+    else:
+        print("Error: You must supply some choices for the menu.")
+        print("Usage: ./menu.py foo bar baz")
